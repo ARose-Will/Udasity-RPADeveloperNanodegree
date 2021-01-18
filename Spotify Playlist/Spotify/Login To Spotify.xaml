@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>936,2534</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>936,2710.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_To_Spotify_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -55,7 +55,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Log into Spotify on the browser.&#xD;&#xA;&#xD;&#xA;Pre: Chrome Browser Open to Spotify.&#xD;&#xA;Post: Logged into Spotify on the Browser" DisplayName="Login_To_Spotify" sap:VirtualizedContainerService.HintSize="916,2474" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Log into Spotify on the browser.&#xA;&#xA;Pre: Chrome Browser Open to Spotify.&#xA;Post: Logged into Spotify on the Browser." DisplayName="Login_To_Spotify" sap:VirtualizedContainerService.HintSize="916,2650.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="Browser" />
     </Sequence.Variables>
@@ -65,13 +65,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Attatch to the Spotify Browser Player." BrowserType="Chrome" DisplayName="Attach Browser - Spotify Player" sap:VirtualizedContainerService.HintSize="874,2303.33333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="6cb6ff06084446d8118da8d9f1f4e76a" Selector="&lt;html app='chrome.exe' title='Spotify - Web Player: Music for everyone' /&gt;" UiBrowser="[Browser]">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Attatch to the Spotify Browser Player." BrowserType="Chrome" DisplayName="Attach Browser - Spotify Player" sap:VirtualizedContainerService.HintSize="874,2480" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="6cb6ff06084446d8118da8d9f1f4e76a" Selector="&lt;html app='chrome.exe' title='Spotify - Web Player: Music for everyone' /&gt;" UiBrowser="[Browser]">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,2126.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,2303.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="uniquelyButton" />
               <Variable x:TypeArguments="x:Boolean" Name="loginButton" />
@@ -125,14 +125,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:UiElementExists>
-            <If sap2010:Annotation.AnnotationText="If the Log In Button exsists..." Condition="[loginButton]" DisplayName="If - Log In Exsists" sap:VirtualizedContainerService.HintSize="798,850" sap2010:WorkflowViewState.IdRef="If_2">
+            <If sap2010:Annotation.AnnotationText="If the Log In Button exsists..." Condition="[loginButton]" DisplayName="If - Log In Exsists" sap:VirtualizedContainerService.HintSize="798,1026.66666666667" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap2010:Annotation.AnnotationText="Login to Spotify." DisplayName="Sequence - Login" sap:VirtualizedContainerService.HintSize="376,668.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence sap2010:Annotation.AnnotationText="Login to Spotify." DisplayName="Sequence - Login" sap:VirtualizedContainerService.HintSize="376,845.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -173,6 +173,33 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:TypeInto>
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" sap2010:Annotation.AnnotationText="Uncheck the Remember Me button." ClickType="CLICK_SINGLE" DisplayName="Click - Remember Me" sap:VirtualizedContainerService.HintSize="334,136.666666666667" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="258761ffa804d829f8d45baae8f188da" Selector="&lt;html app='chrome.exe' title='Login - Spotify' /&gt;&lt;webctrl tag='SPAN' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:Click>
                   <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" sap2010:Annotation.AnnotationText="Click Log In." ClickType="CLICK_SINGLE" DisplayName="Click - Log In" sap:VirtualizedContainerService.HintSize="334,136.666666666667" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">

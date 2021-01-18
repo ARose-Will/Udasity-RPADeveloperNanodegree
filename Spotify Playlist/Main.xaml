@@ -73,7 +73,7 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Open a Chrome Browser." DisplayName="Invoke Open Browser workflow" sap:VirtualizedContainerService.HintSize="334,117.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Browser\Open Browser.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_UrlSpotify">https://open.spotify.com/</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Url">open.spotify.com</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -94,7 +94,7 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Scrape the Global Top 50 Play List." DisplayName="Invoke Global Top 50 workflow" sap:VirtualizedContainerService.HintSize="334,117.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Spotify/Global Top 50 Spotify.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="out_ExtractDataTableGlobal">[dataTableGlobal]</InArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_ExtractDataTableGlobal">[dataTableGlobal]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -104,7 +104,7 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Scrape the United States Top 50 Play List." DisplayName="Invoke United States Top 50 workflow" sap:VirtualizedContainerService.HintSize="334,117.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Spotify/United States Top 50 Spotify.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="out_ExtractDataTableUnited">[dataTableUnited]</InArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_ExtractDataTableUnited">[dataTableUnited]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
